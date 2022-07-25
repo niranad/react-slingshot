@@ -6,7 +6,7 @@ default: &default
 
 jobs:
   build:
-    <<: &default
+    <<: *default
     steps:
       - checkout
       - run: npm i
